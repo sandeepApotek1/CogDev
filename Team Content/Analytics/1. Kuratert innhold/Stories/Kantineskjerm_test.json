@@ -1,0 +1,193 @@
+{
+  "name" : "Kantineskjerm_test",
+  "theme" : "carbonGrey10",
+  "version" : 3700,
+  "eventGroups" : [ ],
+  "properties" : {
+    "customColors" : {
+      "colors" : [ ]
+    },
+    "defaultLocale" : "Default",
+    "fredIsRed" : true,
+    "responsiveLayoutPaddings" : {
+      "horizontal" : 0,
+      "vertical" : 0
+    },
+    "responsiveLayoutMargins" : {
+      "vertical" : 8,
+      "horizontal" : 8
+    }
+  },
+  "pageContext" : [ ],
+  "fredIsRed" : {
+    "id" : "model000001a019ad4c69_00000004",
+    "colorMap" : { },
+    "saveId" : 0
+  },
+  "drillThrough" : [ ],
+  "dataSources" : {
+    "version" : "1.0",
+    "sources" : [ ]
+  },
+  "timeline" : {
+    "id" : "timeline_db5f6576-2a29-47b3-876e-888ae6e7678c",
+    "episodes" : [ {
+      "id" : "title_8c294042-f7d8-4653-aff7-b806104a213b",
+      "type" : "widget",
+      "acts" : [ {
+        "id" : "act_99cba077-7bfa-4ced-894a-7ac58c8db2d8",
+        "timer" : 0,
+        "action" : "show"
+      }, {
+        "id" : "act_c57917b3-6f20-469f-bafa-155c50c1dec2",
+        "timer" : 5000,
+        "action" : "hide"
+      } ]
+    }, {
+      "id" : "subtitle_39e33bcf-e5a1-4c12-a667-82edd313f271",
+      "type" : "widget",
+      "acts" : [ {
+        "id" : "act_06020430-4cdc-4e8d-900e-f3ff78989a05",
+        "timer" : 0,
+        "action" : "show"
+      }, {
+        "id" : "act_fc666fcd-6726-4640-b60c-e99ee77715cc",
+        "timer" : 5000,
+        "action" : "hide"
+      } ]
+    } ]
+  },
+  "layout" : {
+    "id" : "model000001a019ad4c6a_00000000",
+    "style" : {
+      "height" : "100%"
+    },
+    "type" : "slideshow",
+    "pageSize" : {
+      "width" : 1280,
+      "height" : 720
+    },
+    "layoutPositioning" : "relative",
+    "transition" : "animatedPath",
+    "items" : [ {
+      "id" : "model000001a019ad4c6a_00000002",
+      "type" : "container",
+      "templateName" : "Template1",
+      "items" : [ {
+        "id" : "model000001a019ad4c6a_00000004",
+        "css" : "templateBox aspectRatio_default",
+        "type" : "genericPage",
+        "layoutPositioning" : "relative",
+        "items" : [ {
+          "id" : "model000001a019ad4c6a_00000006",
+          "style" : {
+            "top" : "0%",
+            "left" : "0%",
+            "right" : "0%",
+            "bottom" : "0%"
+          },
+          "type" : "templateIndicator"
+        }, {
+          "id" : "title_8c294042-f7d8-4653-aff7-b806104a213b",
+          "style" : {
+            "width" : "79.33%",
+            "height" : "23.52%",
+            "top" : "26.42%",
+            "left" : "10.27%"
+          },
+          "type" : "widget",
+          "features" : {
+            "SelectionRouter" : {
+              "routerPlugins" : {
+                "RouteToParameter" : {
+                  "dropFilterList" : [ ]
+                }
+              },
+              "pluginUpgrader" : {
+                "extId" : "_"
+              }
+            },
+            "Models_internal" : {
+              "id" : "title_8c294042-f7d8-4653-aff7-b806104a213b",
+              "type" : "text",
+              "isResponsive" : true,
+              "placeholder" : {
+                "showIcon" : false,
+                "text" : "Click to edit title"
+              },
+              "content" : {
+                "translationTable" : {
+                  "Default" : "<div class=\"staticContent textFillNoScroll\" dir=\"auto\" style=\"border-radius: 5px;\"><div class=\"summernote\" style=\"display: none;\"></div><div class=\"note-editor\"><div class=\"note-dropzone\">  <div class=\"note-dropzone-message\"></div></div><div class=\"note-editing-area\"><div class=\"note-handle\"><div class=\"note-control-selection\"><div class=\"note-control-selection-bg\"></div><div class=\"note-control-holder note-control-nw\"></div><div class=\"note-control-holder note-control-ne\"></div><div class=\"note-control-holder note-control-sw\"></div><div class=\"note-control-sizing note-control-se\"></div><div class=\"note-control-selection-info\"></div></div></div><div tabindex=\"-1\" contenteditable=\"true\" style=\"position: absolute; left: -100000px; opacity: 0;\"></div><div class=\"note-editable\" contenteditable=\"true\" id=\"title_8c294042-f7d8-4653-aff7-b806104a213bEditable\" style=\"padding: 10px;\"><span class=\"textFitted responsiveColor responsiveFontSize responsiveFontFamily\" style=\"overflow-wrap: normal; font-size: 237px;\" data-inner-margins=\"10px 10px 10px 10px\"><p style=\"text-align: center;\"><br></p></span></div></div></div></div>"
+                }
+              },
+              "name" : {
+                "translationTable" : { }
+              },
+              "defaults" : {
+                "justifyCenter" : true
+              },
+              "borderRadius" : 5
+            }
+          }
+        }, {
+          "id" : "subtitle_39e33bcf-e5a1-4c12-a667-82edd313f271",
+          "style" : {
+            "width" : "62.54%",
+            "height" : "13.68%",
+            "top" : "52.40%",
+            "left" : "18.63%"
+          },
+          "type" : "widget",
+          "features" : {
+            "SelectionRouter" : {
+              "routerPlugins" : {
+                "RouteToParameter" : {
+                  "dropFilterList" : [ ]
+                }
+              },
+              "pluginUpgrader" : {
+                "extId" : "_"
+              }
+            },
+            "Models_internal" : {
+              "id" : "subtitle_39e33bcf-e5a1-4c12-a667-82edd313f271",
+              "type" : "text",
+              "isResponsive" : true,
+              "placeholder" : {
+                "showIcon" : false,
+                "text" : "Click to edit subtitle"
+              },
+              "content" : {
+                "translationTable" : {
+                  "Default" : "<div class=\"staticContent textFillNoScroll\" dir=\"auto\" style=\"display: none; border-radius: 5px;\"><div class=\"summernote\" style=\"display: none;\"></div><div class=\"note-editor\"><div class=\"note-dropzone\">  <div class=\"note-dropzone-message\"></div></div><div class=\"note-editing-area\"><div class=\"note-handle\"><div class=\"note-control-selection\"><div class=\"note-control-selection-bg\"></div><div class=\"note-control-holder note-control-nw\"></div><div class=\"note-control-holder note-control-ne\"></div><div class=\"note-control-holder note-control-sw\"></div><div class=\"note-control-sizing note-control-se\"></div><div class=\"note-control-selection-info\"></div></div></div><div tabindex=\"-1\" contenteditable=\"true\" style=\"position: absolute; left: -100000px; opacity: 0;\"></div><div class=\"note-editable\" contenteditable=\"false\" id=\"subtitle_39e33bcf-e5a1-4c12-a667-82edd313f271Editable\"><span class=\"textFitted responsiveColor responsiveFontSize responsiveFontFamily\" style=\"overflow-wrap: normal; font-size: 149px;\"><p style=\"text-align: center;\"><br></p></span></div></div></div></div>"
+                }
+              },
+              "name" : {
+                "translationTable" : {
+                  "Default" : "Click to edit subtitle"
+                }
+              },
+              "defaults" : {
+                "justifyCenter" : true
+              },
+              "borderRadius" : 5
+            }
+          }
+        } ]
+      } ]
+    } ]
+  },
+  "features" : {
+    "Parameters" : {
+      "params" : { }
+    },
+    "LayoutSets" : {
+      "layoutSetList" : [ ],
+      "activeLayoutSets" : { }
+    },
+    "Bookmarks" : {
+      "bookmarkList" : [ ],
+      "activeBookmarks" : { }
+    }
+  }
+}
