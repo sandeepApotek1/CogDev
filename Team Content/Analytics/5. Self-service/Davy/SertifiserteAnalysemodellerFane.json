@@ -1,0 +1,133 @@
+{
+  "container" : "C",
+  "identifier" : "C_SertifiserteAnalysemodellerFane",
+  "propertyOverride" : [ "refActiveParameterValueSet", "identifier", "label" ],
+  "refActiveParameterValueSet" : "_default",
+  "expressionLocale" : "nb-no",
+  "label" : "SertifiserteAnalysemodellerFane",
+  "version" : "24.0",
+  "useSpec" : [ {
+    "identifier" : "M1",
+    "searchPath" : "/content/folder[@name='Analytics']/folder[@name='5. Self-service']/folder[@name='Davy']/uploadedFile[@name='SertifiserteDataModuler.xlsx']",
+    "type" : "file",
+    "storeID" : "iBDDEE480ABCE470AB4AA31406F983505",
+    "ancestors" : [ {
+      "storeID" : ".public_folders",
+      "defaultName" : "Gruppeinnhold"
+    }, {
+      "storeID" : "i09B00A82AE6C4498AFCB9BC506AC7E08",
+      "defaultName" : "Analytics"
+    }, {
+      "storeID" : "i035B13CD3800496D9683FAB82B5F6E76",
+      "defaultName" : "5. Self-service"
+    }, {
+      "storeID" : "i9392BC223C85465FBE2CD3F05F0CC8C5",
+      "defaultName" : "Davy"
+    } ]
+  } ],
+  "parameterValueSet" : [ {
+    "identifier" : "_default",
+    "propertyOverride" : [ "NEW" ]
+  } ],
+  "dataRetrievalMode" : "liveConnection",
+  "querySubject" : [ {
+    "identifier" : "Sheet1",
+    "ref" : [ "M1.Sheet1" ],
+    "item" : [ {
+      "queryItem" : {
+        "identifier" : "_row_id",
+        "expression" : "_row_id",
+        "hidden" : true,
+        "nullable" : false,
+        "datatype" : "BIGINT",
+        "usage" : "identifier",
+        "regularAggregate" : "count",
+        "description" : "Representerer radnummer-IDen, slik den opprinnelig ble funnet i den opplastede filen.",
+        "facetDefinition" : {
+          "enabled" : "automatic"
+        },
+        "comment" : "Representerer radnummer-IDen, slik den opprinnelig ble funnet i den opplastede filen.",
+        "label" : "Rad-ID"
+      }
+    }, {
+      "queryItem" : {
+        "identifier" : "Analysemodell",
+        "expression" : "Analysemodell",
+        "nullable" : false,
+        "datatype" : "NVARCHAR(MAX)",
+        "usage" : "identifier",
+        "regularAggregate" : "countDistinct",
+        "facetDefinition" : {
+          "enabled" : "automatic"
+        },
+        "label" : "Analysemodell",
+        "numberOfDistinctValues" : "8"
+      }
+    }, {
+      "queryItem" : {
+        "identifier" : "Avdeling",
+        "expression" : "Avdeling",
+        "nullable" : false,
+        "datatype" : "NVARCHAR(MAX)",
+        "usage" : "identifier",
+        "regularAggregate" : "countDistinct",
+        "facetDefinition" : {
+          "enabled" : "automatic"
+        },
+        "label" : "Avdeling",
+        "numberOfDistinctValues" : "8"
+      }
+    }, {
+      "queryItem" : {
+        "identifier" : "Forretningseier",
+        "expression" : "Forretningseier",
+        "nullable" : false,
+        "datatype" : "NVARCHAR(MAX)",
+        "usage" : "identifier",
+        "regularAggregate" : "countDistinct",
+        "facetDefinition" : {
+          "enabled" : "automatic"
+        },
+        "label" : "Forretningseier",
+        "numberOfDistinctValues" : "7"
+      }
+    }, {
+      "queryItem" : {
+        "identifier" : "Beskrivelse",
+        "expression" : "Beskrivelse",
+        "nullable" : false,
+        "datatype" : "NVARCHAR(MAX)",
+        "usage" : "identifier",
+        "regularAggregate" : "countDistinct",
+        "facetDefinition" : {
+          "enabled" : "automatic"
+        },
+        "label" : "Beskrivelse",
+        "numberOfDistinctValues" : "8"
+      }
+    }, {
+      "queryItem" : {
+        "identifier" : "Modul_ID",
+        "expression" : "Modul_ID",
+        "nullable" : false,
+        "datatype" : "NVARCHAR(MAX)",
+        "usage" : "identifier",
+        "regularAggregate" : "countDistinct",
+        "facetDefinition" : {
+          "enabled" : "automatic"
+        },
+        "label" : "Modul_ID",
+        "numberOfDistinctValues" : "7"
+      }
+    } ],
+    "propertyOverride" : [ "NEW" ],
+    "rowCount" : 8,
+    "label" : "SertifiserteDataModuler.xlsx"
+  } ],
+  "lastModified" : "2026-06-24T11:07:06.786Z",
+  "metadataTreeView" : [ {
+    "folderItem" : [ {
+      "ref" : "Sheet1"
+    } ]
+  } ]
+}
