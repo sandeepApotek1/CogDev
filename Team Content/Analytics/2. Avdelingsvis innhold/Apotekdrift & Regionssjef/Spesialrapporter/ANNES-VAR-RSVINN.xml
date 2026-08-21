@@ -1,0 +1,622 @@
+<report xmlns="http://developer.cognos.com/schemas/report/16.2/" expressionLocale="nb-no" useStyleVersion="11.6">
+  				
+				
+  <drillBehavior/>
+  				
+  <layouts>
+    					
+    <layout>
+      						
+      <reportPages>
+        							
+        <page name="Side1">
+          								
+          <style>
+            									
+            <defaultStyles>
+              										
+              <defaultStyle refStyle="pg"/>
+              									
+            </defaultStyles>
+            								
+          </style>
+          								
+          <pageBody>
+            									
+            <style>
+              										
+              <defaultStyles>
+                											
+                <defaultStyle refStyle="pb"/>
+                										
+              </defaultStyles>
+              									
+            </style>
+            									
+            <contents>
+              <list horizontalPagination="true" name="Liste1" refQuery="Spørring1">
+                			
+			
+			
+			
+                <noDataHandler>
+                  				
+                  <contents>
+                    					
+                    <block>
+                      						
+                      <contents>
+                        							
+                        <textItem>
+                          								
+                          <dataSource>
+                            									
+                            <staticValue>Ingen data tilgjengelig</staticValue>
+                            								
+                          </dataSource>
+                          							
+                        </textItem>
+                        						
+                      </contents>
+                      						
+                      <style>
+                        							
+                        <CSS value="padding:16px;"/>
+                        						
+                      </style>
+                      					
+                    </block>
+                    				
+                  </contents>
+                  			
+                </noDataHandler>
+                			
+                <style>
+                  				
+                  <CSS value="border-collapse:collapse"/>
+                  				
+                  <defaultStyles>
+                    					
+                    <defaultStyle refStyle="ls"/>
+                    				
+                  </defaultStyles>
+                  			
+                </style>
+                		
+                <listColumns>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Apotek"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lc"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Apotek"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Kategorisegment"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lc"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Kategorisegment"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemLabel refDataItem="Antall"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Antall"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                  <listColumn>
+                    <listColumnTitle>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lt"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <staticValue>Utgått på dato</staticValue>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnTitle>
+                    <listColumnBody>
+                      <style>
+                        <defaultStyles>
+                          <defaultStyle refStyle="lm"/>
+                        </defaultStyles>
+                      </style>
+                      <contents>
+                        <textItem>
+                          <dataSource>
+                            <dataItemValue refDataItem="Innpris"/>
+                          </dataSource>
+                        </textItem>
+                      </contents>
+                    </listColumnBody>
+                  </listColumn>
+                </listColumns>
+              </list>
+            </contents>
+            								
+          </pageBody>
+          							
+          <XMLAttributes>
+            <XMLAttribute name="RS_legacyDrillDown" output="no" value="0"/>
+          </XMLAttributes>
+        </page>
+        						
+      </reportPages>
+      					
+      <promptPages>
+        <page name="Forespørselside1">
+          			
+          <pageHeader>
+            				
+            <contents>
+              					
+              <block>
+                						
+                <contents>
+                  							
+                  <textItem>
+                    								
+                    <dataSource>
+                      									
+                      <staticValue>Utgått på dato i apotek i valgt periode, pr vare</staticValue>
+                      								
+                    </dataSource>
+                    								
+                    <style>
+                      									
+                      <defaultStyles>
+                        										
+                        <defaultStyle refStyle="tt"/>
+                        									
+                      </defaultStyles>
+                      								
+                    </style>
+                    							
+                  </textItem>
+                  						
+                </contents>
+                						
+                <style>
+                  							
+                  <defaultStyles>
+                    								
+                    <defaultStyle refStyle="ta"/>
+                    							
+                  </defaultStyles>
+                  						
+                </style>
+                					
+              </block>
+              				
+            </contents>
+            				
+            <style>
+              					
+              <defaultStyles>
+                						
+                <defaultStyle refStyle="hp"/>
+                					
+              </defaultStyles>
+              				
+            </style>
+            			
+          </pageHeader>
+          			
+          <pageBody>
+            				
+            <contents>
+              <table>
+                <style>
+                  <defaultStyles>
+                    <defaultStyle refStyle="tb"/>
+                  </defaultStyles>
+                  <CSS value="border-collapse:collapse;width:100%"/>
+                </style>
+                <tableRows>
+                  <tableRow>
+                    <tableCells>
+                      <tableCell>
+                        <contents>
+                          <table>
+                            <style>
+                              <defaultStyles>
+                                <defaultStyle refStyle="tb"/>
+                              </defaultStyles>
+                              <CSS value="border-collapse:collapse;width:100%"/>
+                            </style>
+                            <tableRows>
+                              <tableRow>
+                                <tableCells>
+                                  <tableCell>
+                                    <contents>
+                                      <textItem>
+                                        <dataSource>
+                                          <staticValue>Velg periode:</staticValue>
+                                        </dataSource>
+                                      </textItem>
+                                    </contents>
+                                  </tableCell>
+                                  <tableCell>
+                                    <contents>
+                                      <textItem>
+                                        <dataSource>
+                                          <staticValue>Velg apotek</staticValue>
+                                        </dataSource>
+                                      </textItem>
+                                    </contents>
+                                  </tableCell>
+                                </tableCells>
+                              </tableRow>
+                              <tableRow>
+                                <tableCells>
+                                  <tableCell>
+                                    <contents>
+                                      <selectValue parameter="Rel tid" refQuery="Spørring2">
+                                        <useItem refDataItem="Relativ tid"/>
+                                      </selectValue>
+                                    </contents>
+                                  </tableCell>
+                                  <tableCell>
+                                    <contents>
+                                      <selectWithSearch multiSelect="true" parameter="apotek" refQuery="Spørring3">
+                                        <useItem refDataItem="Dataelement1"/>
+                                      </selectWithSearch>
+                                    </contents>
+                                  </tableCell>
+                                </tableCells>
+                              </tableRow>
+                              <tableRow>
+                                <tableCells>
+                                  <tableCell>
+                                    <contents/>
+                                  </tableCell>
+                                  <tableCell>
+                                    <contents/>
+                                  </tableCell>
+                                </tableCells>
+                              </tableRow>
+                              <tableRow>
+                                <tableCells>
+                                  <tableCell>
+                                    <contents/>
+                                  </tableCell>
+                                  <tableCell>
+                                    <contents/>
+                                  </tableCell>
+                                </tableCells>
+                              </tableRow>
+                            </tableRows>
+                          </table>
+                        </contents>
+                        <style>
+                          <CSS value="text-align:center;vertical-align:top"/>
+                        </style>
+                      </tableCell>
+                    </tableCells>
+                  </tableRow>
+                </tableRows>
+              </table>
+            </contents>
+            				
+            <style>
+              					
+              <defaultStyles>
+                						
+                <defaultStyle refStyle="py"/>
+                					
+              </defaultStyles>
+              				
+            </style>
+            			
+          </pageBody>
+          			
+          <pageFooter>
+            				
+            <contents>
+              					
+              <promptButton type="cancel">
+                						
+                <contents/>
+                						
+                <style>
+                  							
+                  <defaultStyles>
+                    								
+                    <defaultStyle refStyle="bp"/>
+                    							
+                  </defaultStyles>
+                  						
+                </style>
+                					
+              </promptButton>
+              					
+					
+					
+              <promptButton type="finish">
+                						
+                <contents/>
+                						
+                <style>
+                  							
+                  <defaultStyles>
+                    								
+                    <defaultStyle refStyle="bp"/>
+                    							
+                  </defaultStyles>
+                  						
+                </style>
+                					
+              </promptButton>
+              				
+            </contents>
+            				
+            <style>
+              					
+              <defaultStyles>
+                						
+                <defaultStyle refStyle="fp"/>
+                					
+              </defaultStyles>
+              				
+            </style>
+            			
+          </pageFooter>
+          			
+          <style>
+            				
+            <defaultStyles>
+              					
+              <defaultStyle refStyle="pp"/>
+              				
+            </defaultStyles>
+            			
+          </style>
+          		
+        </page>
+      </promptPages>
+    </layout>
+    				
+  </layouts>
+  			
+  <XMLAttributes>
+    <XMLAttribute name="RS_CreateExtendedDataItems" output="no" value="true"/>
+    <XMLAttribute name="listSeparator" output="no" value=";"/>
+    <XMLAttribute name="decimalSeparator" output="no" value=","/>
+    <XMLAttribute name="RS_modelModificationTime" output="no" value="2023-03-20T11:21:20.575Z"/>
+  </XMLAttributes>
+  <queries>
+    <query name="Spørring1">
+      <source>
+        <model/>
+      </source>
+      <selection>
+        <dataItemLevelSet name="Apotek">
+          <dmLevel>
+            <LUN>[Lagertransaksjoner - Apotek (DMR)].[Apotek].[Apotek].[Apotek]</LUN>
+            <itemCaption>Apotek</itemCaption>
+          </dmLevel>
+          <dmDimension>
+            <DUN>[Lagertransaksjoner - Apotek (DMR)].[Apotek]</DUN>
+            <itemCaption>Apotek</itemCaption>
+          </dmDimension>
+          <dmHierarchy>
+            <HUN>[Lagertransaksjoner - Apotek (DMR)].[Apotek].[Apotek]</HUN>
+            <itemCaption>Apotek</itemCaption>
+          </dmHierarchy>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+          </XMLAttributes>
+        </dataItemLevelSet>
+        <dataItemLevelSet name="Kategorisegment">
+          <dmLevel>
+            <LUN>[Lagertransaksjoner - Apotek (DMR)].[Produkt].[Kategorisegment].[Kategorisegment]</LUN>
+            <itemCaption>Kategorisegment</itemCaption>
+          </dmLevel>
+          <dmDimension>
+            <DUN>[Lagertransaksjoner - Apotek (DMR)].[Produkt]</DUN>
+            <itemCaption>Produkt</itemCaption>
+          </dmDimension>
+          <dmHierarchy>
+            <HUN>[Lagertransaksjoner - Apotek (DMR)].[Produkt].[Kategorisegment]</HUN>
+            <itemCaption>Kategorisegment</itemCaption>
+          </dmHierarchy>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="3"/>
+          </XMLAttributes>
+        </dataItemLevelSet>
+        <dataItemMeasure name="Antall">
+          <dmMember>
+            <MUN>[Lagertransaksjoner - Apotek (DMR)].[Lagertransaksjoner Apotek].[Antall]</MUN>
+            <itemCaption>Antall</itemCaption>
+          </dmMember>
+          <dmDimension>
+            <DUN>[Lagertransaksjoner - Apotek (DMR)].[Lagertransaksjoner Apotek]</DUN>
+            <itemCaption>Lagertransaksjoner Apotek</itemCaption>
+          </dmDimension>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+          </XMLAttributes>
+        </dataItemMeasure>
+        <dataItemMeasure name="Innpris">
+          <dmMember>
+            <MUN>[Lagertransaksjoner - Apotek (DMR)].[Lagertransaksjoner Apotek].[Innpris]</MUN>
+            <itemCaption>Innpris</itemCaption>
+          </dmMember>
+          <dmDimension>
+            <DUN>[Lagertransaksjoner - Apotek (DMR)].[Lagertransaksjoner Apotek]</DUN>
+            <itemCaption>Lagertransaksjoner Apotek</itemCaption>
+          </dmDimension>
+          <XMLAttributes>
+            <XMLAttribute name="RS_dataType" output="no" value="2"/>
+          </XMLAttributes>
+        </dataItemMeasure>
+        <dataItemLevelSet name="Lager transaksjonstype apotek">
+          <dmLevel>
+            <LUN>[Lagertransaksjoner - Apotek (DMR)].[Lager transaksjonstype apotek].[Lager transaksjonstype apotek].[Lager transaksjonstype apotek]</LUN>
+            <itemCaption>Lager transaksjonstype apotek</itemCaption>
+          </dmLevel>
+          <dmDimension>
+            <DUN>[Lagertransaksjoner - Apotek (DMR)].[Lager transaksjonstype apotek]</DUN>
+            <itemCaption>Lager transaksjonstype apotek</itemCaption>
+          </dmDimension>
+          <dmHierarchy>
+            <HUN>[Lagertransaksjoner - Apotek (DMR)].[Lager transaksjonstype apotek].[Lager transaksjonstype apotek]</HUN>
+            <itemCaption>Lager transaksjonstype apotek</itemCaption>
+          </dmHierarchy>
+        </dataItemLevelSet>
+      </selection>
+      <detailFilters>
+        <detailFilter>
+          <filterDefinition>
+            <filterInMembers refDataItem="Lager transaksjonstype apotek">
+              <dmMembers>
+                <dmMember>
+                  <MUN>[Lagertransaksjoner - Apotek (DMR)].[Lager transaksjonstype apotek].[Lager transaksjonstype apotek].[Lager transaksjonstype apotek]-&gt;[all].[234]</MUN>
+                  <itemCaption>Utgått på dato</itemCaption>
+                </dmMember>
+              </dmMembers>
+              <dmDimension>
+                <DUN>[Lagertransaksjoner - Apotek (DMR)].[Lager transaksjonstype apotek]</DUN>
+                <itemCaption>Lager transaksjonstype apotek</itemCaption>
+              </dmDimension>
+              <dmHierarchy>
+                <HUN>[Lagertransaksjoner - Apotek (DMR)].[Lager transaksjonstype apotek].[Lager transaksjonstype apotek]</HUN>
+                <itemCaption>Lager transaksjonstype apotek</itemCaption>
+              </dmHierarchy>
+            </filterInMembers>
+          </filterDefinition>
+        </detailFilter>
+        <detailFilter>
+          <filterExpression> [Stock Transactions - Pharmacy (DMR)].[Relative Time].[Relative Time].[Relative Time]= ?Rel tid?</filterExpression>
+        </detailFilter>
+        <detailFilter>
+          <filterExpression>[Lagertransaksjoner - Apotek (DMR)].[Apotek].[Apotek].[Apotek] in (?apotek?)</filterExpression>
+        </detailFilter>
+      </detailFilters>
+    </query>
+    <query name="Spørring2">
+      <source>
+        <model/>
+      </source>
+      <selection>
+        <dataItemLevelSet name="Relativ tid">
+          <dmLevel>
+            <LUN>[Stock Transactions - Pharmacy (DMR)].[Relative Time].[Relative Time].[Relative Time]</LUN>
+            <itemCaption>Relativ tid</itemCaption>
+          </dmLevel>
+          <dmDimension>
+            <DUN>[Stock Transactions - Pharmacy (DMR)].[Relative Time]</DUN>
+            <itemCaption>Relativ tid</itemCaption>
+          </dmDimension>
+          <dmHierarchy>
+            <HUN>[Stock Transactions - Pharmacy (DMR)].[Relative Time].[Relative Time]</HUN>
+            <itemCaption>Relativ tid</itemCaption>
+          </dmHierarchy>
+        </dataItemLevelSet>
+      </selection>
+    </query>
+    <query name="Spørring3">
+      <source>
+        <model/>
+      </source>
+      <selection>
+        <dataItem aggregate="none" name="Dataelement1">
+          <expression>[Lagertransaksjoner - Apotek (DMR)].[Apotek].[Apotek].[Apotek]</expression>
+        </dataItem>
+      </selection>
+    </query>
+  </queries>
+  <classStyles>
+    <classStyle name="GuidedLayoutLeftPadding">
+      <CSS value="padding-left:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+    </classStyle>
+    <classStyle name="GuidedLayoutTopPadding">
+      <CSS value="padding-top:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+    </classStyle>
+    <classStyle name="GuidedLayoutRightPadding">
+      <CSS value="padding-right:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+    </classStyle>
+    <classStyle name="GuidedLayoutBottomPadding">
+      <CSS value="padding-bottom:5px;border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px"/>
+    </classStyle>
+    <classStyle name="GuidedLayoutMargin">
+      <CSS value="margin-bottom:10px"/>
+    </classStyle>
+  </classStyles>
+  <modelPath>/content/folder[@name='Analytics']/folder[@name='9. Databibliotek']/folder[@name='Pakker']/package[@name='Apotek1 (DMR)']/model[@name='model']</modelPath>
+  <reportName>ANNES-VAR-RSVINN</reportName>
+</report>
